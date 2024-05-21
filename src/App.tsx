@@ -1,7 +1,7 @@
 import "./styles/global.css";
 import "./styles/reset.css";
 import "./styles/app.css";
-import { Login } from "./presentation/pages/login";
+import { Login } from "./presentation/pages";
 
 function App() {
   return (
