@@ -1,0 +1,13 @@
+.button-group {
+  @apply flex flex-row;
+  @apply gap-2;
+  @apply w-full;
+}
+
+.button-field {
+  @apply text-sm font-bold text-white;
+  @apply bg-gray-600;
+  @apply p-4 mb-2;
+  @apply w-full;
+  @apply rounded-lg border-solid border-2 border-transparent hover:border-2 hover:border-sky-400 focus:border-sky-700;
+}

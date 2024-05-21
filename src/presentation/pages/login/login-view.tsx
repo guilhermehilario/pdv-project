@@ -1,4 +1,4 @@
-import { Input } from "../../components";
+import { Button, Input } from "../../components";
 
 import "./login.css";
 
@@ -7,6 +7,10 @@ export function LoginView() {
     <div className="login-container">
       <Input placeholder="User" label="Name: " />
       <Input placeholder="Password" />
+      <div className="button-group">
+        <Button>Register</Button>
+        <Button>Login</Button>
+      </div>
     </div>
   );
 }
