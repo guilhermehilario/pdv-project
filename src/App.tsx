@@ -1,12 +1,13 @@
 import "./styles/global.css";
 import "./styles/reset.css";
+import "./styles/app.css";
+import { Login } from "./presentation/pages/login";
 
 function App() {
   return (
-    <>
-      <h1>Hello World</h1>
-      <p>Bem vindo</p>
-    </>
+    <div className="content">
+      <Login />
+    </div>
   );
 }
 
