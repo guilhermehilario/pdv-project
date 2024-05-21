@@ -1,0 +1,17 @@
+.input-container {
+  @apply flex flex-col justify-center items-start;
+  @apply gap-2;
+  @apply w-full;
+}
+
+.input-field {
+  @apply text-sm font-bold text-white;
+  @apply bg-gray-600;
+  @apply w-full;
+  @apply p-3 mb-4;
+  @apply outline-none border-solid border-2 border-transparent focus:border-2 focus:border-sky-500 rounded-lg;
+}
+
+.input-label {
+  @apply text-xs font-bold;
+}
