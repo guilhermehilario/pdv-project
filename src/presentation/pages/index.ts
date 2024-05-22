@@ -1,3 +1,3 @@
-export * from "./Auth/login";
-export * from "./Auth/register";
-export * from "./Auth/recover-password";
+export * from "./authentication/login";
+export * from "./authentication/register";
+export * from "./authentication/recover-password";
