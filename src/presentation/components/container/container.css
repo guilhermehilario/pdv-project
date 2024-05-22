@@ -1,3 +1,14 @@
+.container-title {
+  @apply flex flex-row items-start;
+  @apply w-full;
+  @apply py-3;
+}
+
+.container-title h1 {
+  @apply font-bold text-white text-xl;
+  
+}
+
 .container {
   @apply flex flex-col justify-center items-center;
   @apply w-96 h-auto;
