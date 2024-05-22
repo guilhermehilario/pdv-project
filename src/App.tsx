@@ -8,6 +8,7 @@ import {
   Register,
   SendRecoverEmail,
   NewPassword,
+  Dashboard,
 } from "./presentation/pages";
 
 function App() {
@@ -16,7 +17,8 @@ function App() {
       {/* <Login /> */}
       {/* <Register /> */}
       {/* <SendRecoverEmail /> */}
-      <NewPassword />
+      {/* <NewPassword /> */}
+      <Dashboard />
     </div>
   );
 }

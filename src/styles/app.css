@@ -1,6 +1,6 @@
 .content {
   @apply w-screen h-screen;
-  @apply flex flex-col justify-center items-center;
+  @apply flex flex-row justify-center items-center;
 
   @apply bg-stone-700;
 }

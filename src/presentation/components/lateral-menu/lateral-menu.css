@@ -1,0 +1,14 @@
+.container-menu {
+  @apply flex flex-col;
+  @apply bg-sky-700;
+  @apply w-96 h-full p-6;
+  @apply rounded-r-3xl;
+}
+
+.header-menu {
+  @apply flex flex-col; 
+}
+
+.dashboard-body {
+  @apply w-full;
+}
