@@ -1,10 +1,8 @@
-import "./login.css";
-
-import { Container, Button, ButtonGroup, Input } from "../../components";
+import { Container, Button, ButtonGroup, Input } from "../../../components";
 
 export function LoginView() {
   return (
-    <Container>
+    <Container title="Login">
       <Input placeholder="User" label="Name: " />
       <Input placeholder="Password" />
       <ButtonGroup>

@@ -1,8 +1,8 @@
-import { Button, ButtonGroup, Container, Input } from "../../components";
+import { Button, ButtonGroup, Container, Input } from "../../../components";
 
 export function RegisterView() {
   return (
-    <Container>
+    <Container title="Register">
       <Input name="name" placeholder="Name" />
       <Input name="email" placeholder="E-mail" />
       <Input name="cpf-cnpj" placeholder="CPF/CNPJ" />
