@@ -1,0 +1,7 @@
+.container {
+  @apply flex flex-col justify-center items-center;
+  @apply w-96 h-auto;
+  @apply p-4;
+  @apply rounded-2xl;
+  @apply bg-red-400;
+}
