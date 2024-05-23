@@ -1,8 +1,8 @@
-import { Button, ButtonGroup, Container, Input } from "../../../components";
+import { Button, ButtonGroup, Panel, Input } from "../../../components";
 
 export function RegisterView() {
   return (
-    <Container title="Register">
+    <Panel title="Register">
       <Input name="name" placeholder="Name" />
       <Input name="email" placeholder="E-mail" />
       <Input name="cpf-cnpj" placeholder="CPF/CNPJ" />
@@ -11,6 +11,6 @@ export function RegisterView() {
         <Button>Cancel</Button>
         <Button>Register</Button>
       </ButtonGroup>
-    </Container>
+    </Panel>
   );
 }

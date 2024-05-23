@@ -7,19 +7,20 @@ import {
   Dashboard,
   NewPassword,
 } from "../../presentation/pages";
+import { Website } from "../../presentation/template/Website";
 
 export function AppRoutes() {
   return (
     <BrowserRouter>
       <Routes>
-        <>
-          <Route path="/" Component={Dashboard} />
-
+        <Route Component={Website}>
           <Route path="/register" Component={Register} />
           <Route path="/send-recover-email" Component={SendRecoverEmail} />
           <Route path="/new-password" Component={NewPassword} />
           <Route path="/login" Component={Login} />
-        </>
+
+          <Route path="*" Component={Dashboard} />
+        </Route>
       </Routes>
     </BrowserRouter>
   );

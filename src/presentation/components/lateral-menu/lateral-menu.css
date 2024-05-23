@@ -1,4 +1,4 @@
-.container-menu {
+.panel-menu {
   @apply flex flex-col justify-between;
   @apply bg-red-400;
   @apply w-96 h-full p-12;
@@ -19,7 +19,7 @@
   @apply text-white font-bold;
 }
 
-.container-menu > a {
+.panel-menu > a {
   @apply flex flex-row justify-center;
   @apply w-full p-4;
   @apply rounded-r-3xl;
@@ -28,12 +28,12 @@
   @apply hover:bg-gray-400 hover:rounded-lg;
 }
 
-.container-menu ul {
+.panel-menu ul {
   @apply flex flex-col justify-center items-center;
   @apply w-full h-auto;
 }
 
-.container-menu ul li {
+.panel-menu ul li {
   @apply w-full h-auto;
   @apply p-4 mb-2;
   @apply border-solid border-b-4 border-gray-500 rounded-lg;
@@ -42,7 +42,7 @@
   @apply hover:bg-gray-400 hover:rounded-lg;
 }
 
-.container-menu ul li a {
+.panel-menu ul li a {
   @apply flex flex-col justify-center items-center;
   @apply w-full;
 }

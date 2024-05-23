@@ -1,6 +1,6 @@
-import { LateralMenu } from "../../components";
+/* eslint-disable @typescript-eslint/no-unused-vars */
 import { DashboardProps } from "./type";
 
-export function DashboardView({ itemsMenu }: DashboardProps) {
-  return <LateralMenu itemsMenu={itemsMenu} />;
+export function DashboardView() {
+  return <div className="content">Dashboard</div>;
 }

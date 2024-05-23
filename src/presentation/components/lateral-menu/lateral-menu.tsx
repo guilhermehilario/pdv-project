@@ -8,7 +8,7 @@ export function LateralMenu({ itemsMenu }: LateralMenuProps) {
     </li>
   ));
   return (
-    <div className="container-menu">
+    <div className="panel-menu">
       <div className="perfil">
         <p>ICON</p>
         <a href="/perfil">Fulano Ciclano de Tal</a>

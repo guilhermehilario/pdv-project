@@ -4,7 +4,7 @@ import { InputProps } from "./types";
 
 export function Input({ label, name, ...props }: InputProps) {
   return (
-    <div className="input-container">
+    <div className="input-panel">
       <label htmlFor={name} className="input-label">
         {label}
       </label>
