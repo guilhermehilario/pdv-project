@@ -1,12 +1,54 @@
 .container-menu {
-  @apply flex flex-col;
-  @apply bg-sky-700;
-  @apply w-96 h-full p-6;
+  @apply flex flex-col justify-between;
+  @apply bg-red-400;
+  @apply w-96 h-full p-12;
   @apply rounded-r-3xl;
 }
 
+.perfil {
+  @apply flex flex-col justify-center items-start;
+  @apply gap-4;
+}
+
+.perfil > p {
+  @apply w-full;
+  @apply text-lg text-white font-bold;
+}
+
+.perfil > a {
+  @apply text-white font-bold;
+}
+
+.container-menu > a {
+  @apply flex flex-row justify-center;
+  @apply w-full p-4;
+  @apply rounded-r-3xl;
+  @apply font-bold text-white text-lg;
+  @apply border-solid border-b-4 border-gray-500 rounded-lg;
+  @apply hover:bg-gray-400 hover:rounded-lg;
+}
+
+.container-menu ul {
+  @apply flex flex-col justify-center items-center;
+  @apply w-full h-auto;
+}
+
+.container-menu ul li {
+  @apply w-full h-auto;
+  @apply p-4 mb-2;
+  @apply border-solid border-b-4 border-gray-500 rounded-lg;
+  @apply cursor-pointer;
+  @apply font-bold text-white text-lg;
+  @apply hover:bg-gray-400 hover:rounded-lg;
+}
+
+.container-menu ul li a {
+  @apply flex flex-col justify-center items-center;
+  @apply w-full;
+}
+
 .header-menu {
-  @apply flex flex-col; 
+  @apply flex flex-col;
 }
 
 .dashboard-body {
