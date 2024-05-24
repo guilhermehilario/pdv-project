@@ -1,6 +1,6 @@
 .panel-menu {
   @apply flex flex-col justify-between;
-  @apply bg-red-400;
+  @apply bg-purple-950;
   @apply w-96 h-full p-12;
   @apply rounded-r-3xl;
 }
@@ -24,8 +24,8 @@
   @apply w-full p-4;
   @apply rounded-r-3xl;
   @apply font-bold text-white text-lg;
-  @apply border-solid border-b-4 border-gray-500 rounded-lg;
-  @apply hover:bg-gray-400 hover:rounded-lg;
+  @apply border-solid border-b-4 border-cyan-700 rounded-lg;
+  @apply hover:bg-blue-500 hover:rounded-lg;
 }
 
 .panel-menu ul {
@@ -36,10 +36,10 @@
 .panel-menu ul li {
   @apply w-full h-auto;
   @apply p-4 mb-2;
-  @apply border-solid border-b-4 border-gray-500 rounded-lg;
+  @apply border-solid border-b-4 border-cyan-700 rounded-lg;
   @apply cursor-pointer;
   @apply font-bold text-white text-lg;
-  @apply hover:bg-gray-400 hover:rounded-lg;
+  @apply hover:bg-blue-500 hover:rounded-lg;
 }
 
 .panel-menu ul li a {
