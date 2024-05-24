@@ -6,6 +6,7 @@ import {
   SendRecoverEmail,
   Dashboard,
   NewPassword,
+  ListProducts,
 } from "../../presentation/pages";
 import { Website } from "../../presentation/template/Website";
 
@@ -20,6 +21,7 @@ export function AppRoutes() {
           <Route path="/login" Component={Login} />
 
           <Route path="*" Component={Dashboard} />
+          <Route path="/products" Component={ListProducts} />
         </Route>
       </Routes>
     </BrowserRouter>
