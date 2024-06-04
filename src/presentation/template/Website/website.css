@@ -1,4 +1,4 @@
 .website {
   @apply flex flex-row justify-items-start;
-  @apply w-full h-full;
+  @apply w-screen h-screen;
 }
