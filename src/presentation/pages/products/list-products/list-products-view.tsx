@@ -1,3 +1,7 @@
+import { CardDisplay } from "../../../components";
+import { useProductsViewModel } from "../../../model";
+
 export function ListProductsView() {
-  return <div />;
+  const { itemsProducts } = useProductsViewModel();
+  return <CardDisplay itemsProducts={itemsProducts} />;
 }

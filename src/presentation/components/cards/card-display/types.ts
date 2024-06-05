@@ -3,7 +3,7 @@ export type ItemsProductProps = {
   value: number;
   units?: number;
   measure?: number;
-  typeMeasure?: "kg" | "ml";
+  typeMeasure?: "kg" | "g" | "l" | "ml";
 };
 
 export type CardDisplayProps = {
