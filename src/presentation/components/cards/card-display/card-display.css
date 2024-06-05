@@ -1,11 +1,11 @@
 .card-display-container {
   @apply flex flex-col justify-center items-center;
-  @apply gap-4;
   @apply w-full h-full;
 }
 
 .card-display  {
   @apply flex flex-row justify-start items-center;
+  @apply mb-4;
   @apply w-8/12 h-auto min-h-32;
   @apply bg-gray-500;
   @apply rounded-3xl;

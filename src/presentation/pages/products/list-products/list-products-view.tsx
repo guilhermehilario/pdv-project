@@ -3,5 +3,8 @@ import { useProductsViewModel } from "../../../model";
 
 export function ListProductsView() {
   const { itemsProducts } = useProductsViewModel();
-  return <CardDisplay itemsProducts={itemsProducts} />;
+
+  return itemsProducts.map((element) => (
+    <CardDisplay key={element.product} itemsProduct={element} />
+  ));
 }

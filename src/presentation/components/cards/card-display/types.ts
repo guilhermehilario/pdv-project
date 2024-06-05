@@ -7,5 +7,5 @@ export type ItemsProductProps = {
 };
 
 export type CardDisplayProps = {
-  itemsProducts: ItemsProductProps[];
+  itemsProduct: ItemsProductProps;
 };
