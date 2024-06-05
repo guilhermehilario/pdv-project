@@ -7,6 +7,7 @@ import {
   Dashboard,
   NewPassword,
   ListProducts,
+  NewProducts,
 } from "../../presentation/pages";
 import { Website } from "../../presentation/template/Website";
 
@@ -22,6 +23,7 @@ export function AppRoutes() {
 
           <Route path="*" Component={Dashboard} />
           <Route path="/products" Component={ListProducts} />
+          <Route path="/products/new" Component={NewProducts} />
         </Route>
       </Routes>
     </BrowserRouter>
