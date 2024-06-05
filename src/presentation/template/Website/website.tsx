@@ -10,7 +10,7 @@ export function Website() {
   return (
     <div className="website">
       <LateralMenu itemsMenu={itemsMenu} />
-      <Container>
+      <Container classContainer="container-screen">
         <Outlet />
       </Container>
     </div>

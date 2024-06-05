@@ -1,4 +1,10 @@
-.container-component {
+.container-screen {
   @apply flex flex-col justify-center items-center;
   @apply w-screen h-screen;
+}
+
+.container-full {
+  @apply flex flex-col justify-center items-center;
+  @apply w-full h-full;
+  background-color: red;
 }
