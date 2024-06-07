@@ -1,6 +1,12 @@
 /* eslint-disable @typescript-eslint/no-unused-vars */
+import { FloatingButton } from "../../components";
 import { DashboardProps } from "./type";
 
-export function DashboardView() {
-  return <div className="content">Dashboard</div>;
+export function DashboardView({ floatingMenu }: DashboardProps) {
+  return (
+    <div className="content">
+      <p>Dashboard</p>
+      <FloatingButton menuItemObj={floatingMenu} />
+    </div>
+  );
 }

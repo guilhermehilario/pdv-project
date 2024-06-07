@@ -1,5 +1,8 @@
+import { useProductsViewModel } from "../../../model";
 import { ListProductsView } from "./list-products-view";
 
 export function ListProducts() {
-  return <ListProductsView />;
+  const { itemsProducts } = useProductsViewModel();
+
+  return <ListProductsView itemsProducts={itemsProducts} />;
 }

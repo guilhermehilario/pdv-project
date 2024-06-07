@@ -1,9 +1,7 @@
 import { CardDisplay } from "../../../components";
-import { useProductsViewModel } from "../../../model";
+import { ListProductsProps } from "./type";
 
-export function ListProductsView() {
-  const { itemsProducts } = useProductsViewModel();
-
+export function ListProductsView({ itemsProducts }: ListProductsProps) {
   return itemsProducts.map((element) => (
     <CardDisplay key={element.product} itemsProduct={element} />
   ));

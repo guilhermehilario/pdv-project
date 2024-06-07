@@ -20,10 +20,10 @@ export function AppRoutes() {
           <Route path="/send-recover-email" Component={SendRecoverEmail} />
           <Route path="/new-password" Component={NewPassword} />
           <Route path="/login" Component={Login} />
-
-          <Route path="*" Component={Dashboard} />
           <Route path="/products" Component={ListProducts} />
           <Route path="/products/new" Component={NewProducts} />
+
+          <Route path="*" Component={Dashboard} />
         </Route>
       </Routes>
     </BrowserRouter>
