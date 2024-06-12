@@ -1,5 +1,9 @@
-import { ItemsProductProps } from "../../../components/cards/card-display/types";
+import {
+  FloatingButtonItemProps,
+  ItemsProductProps,
+} from "../../../components";
 
 export type ListProductsProps = {
   itemsProducts: ItemsProductProps[];
+  itemsMenu: FloatingButtonItemProps[];
 };

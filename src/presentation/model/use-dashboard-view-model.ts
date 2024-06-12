@@ -5,7 +5,7 @@ const itemsMenu = [
   },
   {
     name: "Products",
-    component: "/products",
+    component: "/products/list",
   },
   {
     name: "Clients",

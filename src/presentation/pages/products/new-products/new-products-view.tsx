@@ -1,14 +1,18 @@
-import { Input, Panel } from "../../../components";
+import { FloatingButton, Input, Panel } from "../../../components";
+import { NewProductsProps } from "./type";
 
-export function NewProductsView() {
+export function NewProductsView({ itemsMenu }: NewProductsProps) {
   return (
-    <Panel title="Cadastro de Produto">
-      <Input placeholder="Produto" />
-      <Input placeholder="Marca" />
-      <Input placeholder="Sabor" />
-      <Input placeholder="Valor" type="number" />
-      <Input placeholder="Quantidade" type="number" />
-      <Input placeholder="Código de Barras" />
-    </Panel>
+    <>
+      <Panel title="Cadastro de Produto">
+        <Input placeholder="Produto" />
+        <Input placeholder="Marca" />
+        <Input placeholder="Sabor" />
+        <Input placeholder="Valor" type="number" />
+        <Input placeholder="Quantidade" type="number" />
+        <Input placeholder="Código de Barras" />
+      </Panel>
+      <FloatingButton items={itemsMenu} />
+    </>
   );
 }
