@@ -1,6 +1,6 @@
-import { ItemMenuProps, MenuItemObjProps } from "../../components";
+import { ItemMenuProps, FloatingButtonItemProps } from "../../components";
 
 export type DashboardProps = {
-  itemsMenu: ItemMenuProps[];
-  floatingMenu: MenuItemObjProps[];
+  itemsMenu?: ItemMenuProps[];
+  floatingMenu?: FloatingButtonItemProps[];
 };

@@ -1,11 +1,19 @@
+/* eslint-disable jsx-a11y/no-static-element-interactions */
+/* eslint-disable jsx-a11y/click-events-have-key-events */
+import { useState } from "react";
 import "./floating-button.css";
 
 import { FloatingButtonProps } from "./type";
 
-export function FloatingButton({ menuItemObj }: FloatingButtonProps) {
-  const menuItems = menuItemObj.map((element) => (
-    <a href={element.link} key={element.title}>
-      <i className="material-icons">element.title</i>
+export function FloatingButton({ items }: FloatingButtonProps) {
+  const [itsOpen, setItsOpen] = useState(false);
+
+  const toggleVisibility = () => setItsOpen((prev) => !prev);
+  const menuItems = items?.map((element) => (
+    <a className="float-element" key={element.title} href={element.link}>
+      <span>
+        <i className="material-icons">{element.title}</i>
+      </span>
     </a>
   ));
   return (
@@ -15,19 +23,9 @@ export function FloatingButton({ menuItemObj }: FloatingButtonProps) {
         rel="stylesheet"
       />
       <div className="floating-container">
-        <div className="floating-button">+</div>
-        <div className="element-container">
-          <span className="float-element tooltip-left">{menuItems}</span>
-          <span className="float-element">
-            <a href="/">
-              <i className="material-icons">email</i>
-            </a>
-          </span>
-          <span className="float-element">
-            <a href="/">
-              <i className="material-icons">chat</i>
-            </a>
-          </span>
+        <div className="element-container">{itsOpen ? menuItems : null}</div>
+        <div className="floating-button" onClick={toggleVisibility}>
+          +
         </div>
       </div>
     </>

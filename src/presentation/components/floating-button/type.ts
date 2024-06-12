@@ -1,8 +1,9 @@
-export type MenuItemObjProps = {
+export type FloatingButtonItemProps = {
   title: string;
   link: string;
+  color: string;
 };
 
 export type FloatingButtonProps = {
-  menuItemObj: MenuItemObjProps[];
+  items?: FloatingButtonItemProps[];
 };

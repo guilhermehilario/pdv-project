@@ -6,7 +6,7 @@ export function DashboardView({ floatingMenu }: DashboardProps) {
   return (
     <div className="content">
       <p>Dashboard</p>
-      <FloatingButton menuItemObj={floatingMenu} />
+      <FloatingButton items={floatingMenu} />
     </div>
   );
 }
