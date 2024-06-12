@@ -16,10 +16,11 @@ export function AppRoutes() {
     <BrowserRouter>
       <Routes>
         <Route Component={Website}>
+          <Route path="/login" Component={Login} />
           <Route path="/register" Component={Register} />
           <Route path="/send-recover-email" Component={SendRecoverEmail} />
           <Route path="/new-password" Component={NewPassword} />
-          <Route path="/login" Component={Login} />
+
           <Route path="/products/list" Component={ListProducts} />
           <Route path="/products/new" Component={NewProducts} />
 

@@ -14,7 +14,7 @@ export function LateralMenu({ itemsMenu }: LateralMenuProps) {
         <a href="/perfil">Fulano Ciclano de Tal</a>
       </div>
       <ul>{listItems}</ul>
-      <a href="/logout">Logout</a>
+      <a href="/login">Logout</a>
     </div>
   );
 }
