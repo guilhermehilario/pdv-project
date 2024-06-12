@@ -1,7 +1,7 @@
 const itemsMenu = [
   {
     name: "Dashboard",
-    component: "#",
+    component: "/",
   },
   {
     name: "Products",
@@ -9,7 +9,7 @@ const itemsMenu = [
   },
   {
     name: "Clients",
-    component: "/clients",
+    component: "/clients/list",
   },
   {
     name: "Settings",

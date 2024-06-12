@@ -8,6 +8,8 @@ import {
   NewPassword,
   ListProducts,
   NewProducts,
+  ListClients,
+  NewClients,
 } from "../../presentation/pages";
 import { Website } from "../../presentation/template/Website";
 
@@ -23,6 +25,9 @@ export function AppRoutes() {
 
           <Route path="/products/list" Component={ListProducts} />
           <Route path="/products/new" Component={NewProducts} />
+
+          <Route path="clients/list" Component={ListClients} />
+          <Route path="clients/new" Component={NewClients} />
 
           <Route path="*" Component={Dashboard} />
         </Route>

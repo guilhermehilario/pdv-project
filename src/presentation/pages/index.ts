@@ -4,3 +4,4 @@ export * from "./authentication/recover-password";
 
 export * from "./dashboard";
 export * from "./products";
+export * from "./clients";
