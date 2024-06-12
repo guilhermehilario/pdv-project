@@ -1,0 +1,40 @@
+.table {
+  @apply rounded-lg;
+}
+  
+.table, th {
+  @apply flex-row justify-start items-start;
+  @apply bg-red-500;
+  @apply p-4;
+}
+
+.table, th:first-child {
+  @apply rounded-tl-lg
+}
+
+.table, th:last-child {
+  @apply rounded-tr-lg;
+}
+    
+.table, td {
+  @apply bg-red-400;
+  @apply p-4;
+  @apply text-left;
+  }
+  
+td {
+  @apply border-t-2 border-solid border-red-500;
+
+}
+
+.table, td:hover {
+  @apply cursor-pointer;
+}
+
+.table, td:first-child {
+  @apply rounded-bl-lg
+}
+
+.table, td:last-child {
+  @apply rounded-br-lg;
+}

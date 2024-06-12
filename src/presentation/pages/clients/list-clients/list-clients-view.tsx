@@ -1,12 +1,12 @@
-import { FloatingButton, Input, Panel } from "../../../components";
-import { ListClientsProps } from "./type";
+import { FloatingButton, Table } from "../../../components";
+import { useClientsViewModel } from "../../../model";
+import { ListClientsProps } from "./types";
 
 export function ListClientsView({ itemsMenu }: ListClientsProps) {
+  const { items, titles } = useClientsViewModel();
   return (
     <>
-      <Panel title="Listar Clientes">
-        <Input />
-      </Panel>
+      <Table titleHeader={titles} itemsTable={items} />
       <FloatingButton items={itemsMenu} />
     </>
   );
