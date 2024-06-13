@@ -1,5 +1,5 @@
 import { FloatingButton, Input, Panel } from "../../../components";
-import { NewProductsProps } from "./type";
+import { NewProductsProps } from "./types";
 
 export function NewProductsView({ itemsMenu }: NewProductsProps) {
   return (
