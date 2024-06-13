@@ -1,17 +1,11 @@
-import { useNavigate } from "react-router-dom";
-
 import { FloatingButton } from "../../../components";
-import { useClientsViewModel } from "../../../model";
 import { ListClientsProps } from "./types";
 
-export function ListClientsView({ itemsMenu }: ListClientsProps) {
-  const { clients } = useClientsViewModel();
-  const navigate = useNavigate();
-
-  const onClick = (id: string) => {
-    navigate(`/client/${id}`);
-  };
-
+export function ListClientsView({
+  itemsMenu,
+  clients,
+  onClick,
+}: ListClientsProps) {
   const listClients = clients.map((client) => (
     <tr key={client.id} onClick={() => onClick(client.id)}>
       <td>{client.id}</td>

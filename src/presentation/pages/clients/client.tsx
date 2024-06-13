@@ -4,8 +4,11 @@ import { useClientsViewModel } from "../../model";
 import { ClientView } from "./client-view";
 
 export function Client() {
-  const { clients, account } = useClientsViewModel();
+  const { clients } = useClientsViewModel();
   const { id } = useParams();
   const client = clients.find((item) => item.id === id);
-  return <ClientView client={client} account={account} />;
+
+  if (client?.account) {
+    return <ClientView client={client} account={client.account} />;
+  }
 }

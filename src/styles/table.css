@@ -28,10 +28,10 @@
   @apply cursor-pointer;
 }
 
-.table, td:first-child {
-  @apply rounded-bl-lg
+.table, tr:last-child > td:first-child {
+  @apply rounded-bl-lg;
 }
 
-.table, td:last-child {
+.table, tr:last-child > td:last-child {
   @apply rounded-br-lg;
 }

@@ -1,5 +1,5 @@
 export type AccountProps = {
-  id: string;
+  id?: string;
   value?: number;
   product?: string;
   amount?: number;
@@ -11,7 +11,8 @@ export type ClientProps = {
   id: string;
   name: string;
   cpf: string;
-  account?: AccountProps[];
+  accountValue: number;
+  account: AccountProps[];
   onClick?: (id: string) => void;
 };
 
