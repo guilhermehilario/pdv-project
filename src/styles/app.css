@@ -4,3 +4,7 @@
 
   @apply bg-stone-700;
 }
+
+.form-panel {
+  @apply w-full h-full;
+}
