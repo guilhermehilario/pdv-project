@@ -3,10 +3,10 @@ import { useClientsViewModel } from "../../../model";
 import { ListClientsProps } from "./types";
 
 export function ListClientsView({ itemsMenu }: ListClientsProps) {
-  const { items, titles } = useClientsViewModel();
+  const { clients, titles } = useClientsViewModel();
   return (
     <>
-      <Table titleHeader={titles} itemsTable={items} />
+      <Table titleHeader={titles} itemsTable={clients} />
       <FloatingButton items={itemsMenu} />
     </>
   );

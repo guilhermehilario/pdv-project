@@ -10,6 +10,7 @@ import {
   NewProducts,
   ListClients,
   NewClients,
+  Client,
 } from "../../presentation/pages";
 import { Website } from "../../presentation/template/Website";
 
@@ -26,6 +27,7 @@ export function AppRoutes() {
           <Route path="/products/list" Component={ListProducts} />
           <Route path="/products/new" Component={NewProducts} />
 
+          <Route path="client/1" Component={Client} />
           <Route path="clients/list" Component={ListClients} />
           <Route path="clients/new" Component={NewClients} />
 
