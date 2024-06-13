@@ -1,16 +1,52 @@
 import { Button, ButtonGroup, Panel, Input } from "../../../components";
+import { RegisterViewProps } from "./types";
 
-export function RegisterView() {
+export function RegisterView({
+  formData,
+  onCancel,
+  onChange,
+  onSubmitRegister,
+}: RegisterViewProps) {
   return (
     <Panel title="Register">
-      <Input name="name" placeholder="Name" />
-      <Input name="email" placeholder="E-mail" />
-      <Input name="cpf-cnpj" placeholder="CPF/CNPJ" />
-      <Input name="phone" placeholder="Phone" />
-      <ButtonGroup>
-        <Button>Cancel</Button>
-        <Button>Register</Button>
-      </ButtonGroup>
+      <form className="form-panel" onSubmit={onSubmitRegister}>
+        <Input
+          name="name"
+          placeholder="Name"
+          value={formData.name}
+          onChange={onChange}
+        />
+        <Input
+          name="email"
+          placeholder="E-mail"
+          type="email"
+          value={formData.email}
+          onChange={onChange}
+        />
+        <Input
+          name="cpfcnpj"
+          placeholder="CPF/CNPJ"
+          value={formData.cpfcnpj}
+          onChange={onChange}
+        />
+        <Input
+          name="phone"
+          placeholder="Phone"
+          value={formData.phone}
+          onChange={onChange}
+        />
+        <Input
+          name="password"
+          placeholder="password"
+          type="password"
+          value={formData.password}
+          onChange={onChange}
+        />
+        <ButtonGroup>
+          <Button onClick={onCancel}>Cancel</Button>
+          <Button type="submit">Register</Button>
+        </ButtonGroup>
+      </form>
     </Panel>
   );
 }
