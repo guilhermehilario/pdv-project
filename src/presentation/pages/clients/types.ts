@@ -1,4 +1,5 @@
 export type AccountProps = {
+  id: string;
   value?: number;
   product?: string;
   amount?: number;
@@ -15,6 +16,6 @@ export type ClientProps = {
 };
 
 export type ClientViewProps = {
-  client: ClientProps;
+  client?: ClientProps;
   account?: AccountProps[];
 };

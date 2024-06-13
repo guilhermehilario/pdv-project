@@ -1,4 +1,5 @@
 export type ItemsProductProps = {
+  id: string;
   product: string;
   value: number;
   units?: number;

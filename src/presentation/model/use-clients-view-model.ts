@@ -23,6 +23,7 @@ const clients = [
 
 const account = [
   {
+    id: "1",
     value: 30,
     product: "Skol - Lata",
     amount: 6,
@@ -30,6 +31,7 @@ const account = [
     status: "pendent",
   },
   {
+    id: "2",
     value: 30,
     product: "Skol - Lata",
     amount: 6,
@@ -37,6 +39,7 @@ const account = [
     status: "pendent",
   },
   {
+    id: "3",
     value: 30,
     product: "Skol - Lata",
     amount: 6,
@@ -44,6 +47,7 @@ const account = [
     status: "pendent",
   },
   {
+    id: "4",
     value: 40,
     product: "Skol - Lata",
     amount: 8,

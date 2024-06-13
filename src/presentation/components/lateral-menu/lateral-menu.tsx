@@ -1,5 +1,5 @@
 import "./lateral-menu.css";
-import { LateralMenuProps } from "./type";
+import { LateralMenuProps } from "./types";
 
 export function LateralMenu({ itemsMenu }: LateralMenuProps) {
   const listItems = itemsMenu.map((element) => (

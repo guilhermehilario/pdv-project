@@ -1,14 +1,17 @@
 import { CardDisplay, FloatingButton } from "../../../components";
-import { ListProductsProps } from "./type";
+import { ListProductsProps } from "./types";
 
 export function ListProductsView({
   itemsProducts,
   itemsMenu,
 }: ListProductsProps) {
-  return itemsProducts.map((element) => (
+  const Product = itemsProducts.map((element) => (
+    <CardDisplay key={element.id} itemsProduct={element} />
+  ));
+  return (
     <>
-      <CardDisplay key={element.product} itemsProduct={element} />
+      {Product}
       <FloatingButton items={itemsMenu} />
     </>
-  ));
+  );
 }

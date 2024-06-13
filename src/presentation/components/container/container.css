@@ -1,6 +1,7 @@
 .container-screen {
   @apply flex flex-col justify-center items-center;
   @apply w-screen h-screen;
+  @apply gap-4;
 }
 
 .container-full {

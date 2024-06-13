@@ -1,2 +1,2 @@
 export * from "./lateral-menu";
-export * from "./type";
+export * from "./types";

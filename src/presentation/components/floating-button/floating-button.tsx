@@ -3,7 +3,7 @@
 import { useState } from "react";
 import "./floating-button.css";
 
-import { FloatingButtonProps } from "./type";
+import { FloatingButtonProps } from "./types";
 
 export function FloatingButton({ items }: FloatingButtonProps) {
   const [itsOpen, setItsOpen] = useState(false);

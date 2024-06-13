@@ -5,4 +5,3 @@ export * from "./floating-button";
 export * from "./lateral-menu";
 export * from "./container";
 export * from "./cards";
-export * from "./table";
